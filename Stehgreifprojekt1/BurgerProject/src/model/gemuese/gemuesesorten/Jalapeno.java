@@ -1,9 +1,14 @@
-package model.gemuese.gemuesesorten;
-import model.gemuese.Gemuese;
+package model.broetchen.broetchensorten;
+import model.broetchen.Broetchen;
 
-public abstract class Jalapeno extends Gemuese {
+public class VeganBroetchen extends Broetchen {
 
-    public Jalapeno () {
-        super("Jalapeno-Ringe", 43, 0.08, false);
+    public VeganBroetchen () {
+        super("Veganes Brötchen", 12, 0.95, false, true, true);
+            backzeit = 240;
+            hoehe = 3.4;
+    }
+    public void setHoehe (double broetchensortenHoehe){
+        hoehe=broetchensortenHoehe;
     }
 }
