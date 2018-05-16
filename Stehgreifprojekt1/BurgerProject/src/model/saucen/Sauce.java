@@ -12,11 +12,17 @@ public class Sauce extends Zutat {
 		this.geschmack = geschmack;
 	}
 	
-	@Override
 	public int zubereiten () {
-
-		return 0;
-	}
+        if (nummer == 50){
+            System.out.println("Die Ketchup-Sauce wird geschüttelt.");
+        } else if (nummer == 51){
+            System.out.println("Die Sandwich-Sauce wird geschüttelt.");
+        }else if (nummer == 52){
+            System.out.println("Die Chili-Sauce wird geschüttelt.");
+        }else if (nummer == 53)
+            System.out.println("Die Honig-Senf-Sauce wird geschüttelt.");
+        return 0;
+    	}
 
 	@Override
 	public int berechneHoehe() {
