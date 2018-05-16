@@ -12,14 +12,24 @@ public abstract class Gemuese extends Zutat {
 		this.scheibenDicke = scheibenDicke;
 	}
 	
-	public int zubereiten () {
-		int zubereitungszeit = scheibenAnzahl*1;
-		return zubereitungszeit;
-	}
-	
-	public int berechneHoehe () {
-		return 0;	
-	}
+	 public int zubereiten () {
+        int zubereitungszeitGemuese = scheibenAnzahl*1;
+
+        if (nummer == 40){
+            System.out.println("Die Tomaten für Ihren Burger werden geschnitten.");
+        } else if (nummer == 41){
+            System.out.println("Die Salzgurken für Ihren Burger werden geschnitten.");
+        }else if (nummer == 42){
+            System.out.println("Ihre Roten Zwiebelringe werden klein geschnitten.");
+        }else if (nummer == 43)
+            System.out.println("Ihre Jalapeno-Ringe werden klein geschnitten.");
+
+        return zubereitungszeitGemuese;
+    }
+
+    public double berechneHoehe () {
+        return scheibenDicke;
+    }
 	
 //	public String toString () {
 //		return String;
