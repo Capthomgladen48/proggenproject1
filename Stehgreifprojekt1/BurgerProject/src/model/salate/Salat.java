@@ -8,10 +8,15 @@ public class Salat extends Zutat {
 		super (name, nummer, preis, klassisch, true, true);
 	}
 	
-	public int zubereiten () {
-		return 0;
-		
-	}
+	 public int zubereiten () {
+        if (nummer == 30){
+            System.out.println("Der Eisbergsalat wird gewaschen.");
+        } else if (nummer == 31)
+            System.out.println("Der Rucola Salat wird gewaschen.");
+
+        return 0;
+
+    }
 
 //	public string toString () {
 //		return string;
