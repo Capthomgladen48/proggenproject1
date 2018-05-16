@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
 public class Burger {
+					
+	protected double burgerHoehe;
+    	protected double broetchenHoehe;
+    	protected double bratlingHoehe;
+    	protected double scheibenDicke;
 
-    public void safeName () {
+    	public void safeName () {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bitte geben Sie ihrem Burger einen Namen: ");
         String input = sc.next();
@@ -38,7 +43,7 @@ public class Burger {
 	}
 	
 	public void burgerHeight () {
-		
+		return burgerHoehe;
 	}
 	
 	public void burgerPrice () {
